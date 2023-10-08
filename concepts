@@ -1,0 +1,29 @@
+Abrir o VSCode
+
+Definir uma pasta para executar o scrit do python e outra para os arquivos a serem alterados.
+
+import os
+
+os.chdir(r"C:\Users\goaf\Downloads\Projeto_Organiz_Arq_George")
+
+os.getcwd()
+
+'C:\\Users\\goaf\\Downloads\\Projeto_Organiz_Arq_George'
+
+os.listdir()
+['docx',
+ 'ipynb',
+ 'new microsoft word document - copy - Copy.docx',
+ 'new microsoft word document - copy.docx',
+ 'Pasta1',
+ 'Pasta2',
+ 'pptx',
+ 'txt',
+ 'xlsx']
+
+lista_arquivos = [arquivo.lower() for arquivo in os.listdir() if os.path.isfile(arquivo)]
+
+lista_arquivos
+
+['new microsoft word document - copy - copy.docx',
+ 'new microsoft word document - copy.docx']
